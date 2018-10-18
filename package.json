@@ -7,5 +7,14 @@
   },
   "author": "Paul Petillot",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  }
 }
