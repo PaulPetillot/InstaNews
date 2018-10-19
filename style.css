@@ -64,6 +64,7 @@ body{
     height: 15.5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 /* Text Choose a Section */
 
@@ -71,6 +72,8 @@ body{
     color: white;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -99,6 +102,71 @@ form {
 /* The footer */
 .credit {
     color: #c2c2c2;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
+/* end of mobile version */
+
+@media screen and (min-width: 600px) { 
+
+/* The logo */
+.logo{
+    width: 34%;
+    height: 11.5rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 51px;
+}
+.textAtTop{
+    color: white;
+
+}
+.headerDiv{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+/* Text Choose a Section */
+
+.logo, .textAtTop {
+    display: flex;
+}
+/* The footer */
+.credit {
+    color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+}
+
+@media screen and (min-width: 1023px) { 
+
+    /* The header */
+    .logo{
+        width: 29%;
+        height: 14rem;
+        margin-left: 0px;
+        margin-right: -50px;
+    }
+    .textAtTop{
+        color: white;
+    
+    }
+    .headerDiv{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 250px;
+        margin-top: 150px;
+    }
+    /* The footer */
+    .credit {
+        color: #c2c2c2;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+    }

@@ -1,4 +1,3 @@
-var hello="hello";
-var world="world";
-
+var hello='hello';
+var world='world';
 console.log(hello + world);
