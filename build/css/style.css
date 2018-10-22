@@ -146,8 +146,7 @@ form {
     .credit {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      margin-top: 100px; } }
+              justify-content: flex-start; } }
 
 @media (min-width: 600px) {
   .headerDiv {
@@ -181,5 +180,5 @@ form {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 0;
-    margin-bottom: 210px;
-    margin-top: 100px; } }
+    margin-bottom: 280px;
+    margin-top: 130px; } }
