@@ -1,0 +1,101 @@
+@import 'reset';
+@import 'fonts';
+@import 'mixin';
+@import 'variables';
+
+/* Mobile version */
+html{
+    font-size: 16px;
+}
+body{
+    background-color: $backgroundColor;
+    @include font;
+}
+
+/* The logo */
+.logo{
+    display: flex;
+    width: 50%;
+    height: 15.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    @include tablet {
+        width: 34%;
+        height: 11.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 51px;
+    }
+    @include desktop{
+        width: 29%;
+        height: 14rem;
+        margin-left: 0px;
+        margin-right: -50px;
+    }
+}
+/* Text Choose a Section */
+
+.textAtTop{
+    color: $font-color-base;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/*The List of different sections */
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+/* The article design */
+
+/* The footer */
+.credit {
+    color: $footer-color;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+        margin-top: 100px;
+    }
+    @include desktop {
+        justify-content: flex-start;
+        margin-top: 100px;
+    }
+}
+@include tablet{
+    .headerDiv{
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+    }
+    /* Text Choose a Section */
+    .logo, .textAtTop {
+        display: flex;
+    }
+}
+@include desktop{
+      /* The header */
+      .logo{
+        width: 29%;
+        height: 14rem;
+        margin-left: 0px;
+        margin-right: -50px;
+    }
+    .textAtTop{
+        color: $font-color-base;
+    
+    }
+    .headerDiv{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 210px;
+        margin-top: 100px;
+    }
+}
