@@ -23,22 +23,13 @@ $('select').on('change', function(){
         var $url = data.results[i].url;
         var $description = data.results[i].abstract;
         console.log(data);
-        $('.oneArticle').append('<a href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a>')
+        $('.oneArticle').append('<section><a href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a></section>')
         }
         
        }).fail(function(err) {
         throw err;
        });      
 })
-
-
-
-//Create a loop for the articles
-
-
-//Listen for change for the select list
-
-//Filter the different request
 
 //Move the logo
 
