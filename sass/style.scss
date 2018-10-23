@@ -43,27 +43,22 @@ body{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-header {
-    margin-bottom: 2rem;
-}
+header {margin-bottom: 2rem;}
 .shrink{
     animation: logo 1.5s both;
     @include tablet{
-    animation: logo-tablet 1.5s both;
-    }
+    animation: logo-tablet 1.5s both;}
     @include desktop{
-    animation: logo-desktop 1.5s both;
-    }
+    animation: logo-desktop 1.5s both;}
 }
 .body-move{
     animation: body-move-mobile 1.5s both;
-    @include tablet {animation: body-move-mobile 1.5s both;}
+    @include tablet {animation: body-move-tablet 1.5s both;}
     @include desktop {animation: body-move 1.5s both;}
 }
 @keyframes logo-desktop{
     0%{transform: translate(0px, 0px) scale(1);}
-    100%{
-        transform: translate(-360px, 90px) scale(0.5);}
+    100%{transform: translate(-360px, 90px) scale(0.5);}
 }
 @keyframes body-move{
     0%{transform: translate(0px, 0px);}
@@ -71,17 +66,19 @@ header {
 }
 @keyframes body-move-mobile{
     0%{transform: translate(0px, 0px);}
+    100%{transform: translateY(-180px);}
+}
+@keyframes body-move-tablet{
+    0%{transform: translate(0px, 0px);}
     100%{transform: translateY(-100px);}
 }
 @keyframes logo{
     0%{transform: translate(0px) scale(1);}
-    100%{
-        transform: translateY(120px) scale(0.3);} 
+    100%{transform: translateY(120px) scale(0.3);} 
 }
 @keyframes logo-tablet{
     0%{transform: translate(0px) scale(1);}
-    100%{
-        transform: translateY(65px) scale(0.7);}
+    100%{transform: translateY(65px) scale(0.7);}
     }
 /*The List of different sections */
 
@@ -113,7 +110,6 @@ main section{
 }
 .articleImage{
     width: 100%; 
-    size: cover;
 }
 
 .articleDescription{
@@ -135,18 +131,20 @@ main section{
 }
 //Gif
 #ajax-loading{
+
     width: 50px;
     height: 50px;
     margin-left: 0px;
     display: none;
+    
     @include tablet{
     width: 100px;
     height: 100px;
     margin-left: 150px;}
     @include desktop{
     width: 100px;
-    height: 100px;
-    margin-left: 150px;}
+    height: 100px;}
+  
 }
 // Links of the articles 
 .articleLink{
@@ -164,7 +162,6 @@ main section{
     }
     @include desktop {
         justify-content: flex-start;
-        
     }
 }
 @include tablet{
@@ -180,15 +177,9 @@ main section{
 }
 @include desktop{
       /* The header */
-      .logo{
-        width: 29%;
-        height: 14rem;
-        margin-left: 0px;
-        margin-right: -50px;
-    }
+    
     .textAtTop{
         color: $font-color-base;
-    
     }
     .headerDiv{
         display: flex;

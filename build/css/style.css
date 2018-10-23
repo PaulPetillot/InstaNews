@@ -139,8 +139,8 @@ header {
           animation: body-move-mobile 1.5s both; }
   @media (min-width: 600px) {
     .body-move {
-      -webkit-animation: body-move-mobile 1.5s both;
-              animation: body-move-mobile 1.5s both; } }
+      -webkit-animation: body-move-tablet 1.5s both;
+              animation: body-move-tablet 1.5s both; } }
   @media (min-width: 1023px) {
     .body-move {
       -webkit-animation: body-move 1.5s both;
@@ -183,10 +183,26 @@ header {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px); }
   100% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px); } }
+
+@keyframes body-move-mobile {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px); } }
+
+@-webkit-keyframes body-move-tablet {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px); } }
 
-@keyframes body-move-mobile {
+@keyframes body-move-tablet {
   0% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px); }
@@ -259,8 +275,7 @@ main section {
       height: 200px; } }
 
 .articleImage {
-  width: 100%;
-  size: cover; }
+  width: 100%; }
 
 .articleDescription {
   width: 100%;
@@ -291,8 +306,7 @@ main section {
   @media (min-width: 1023px) {
     #ajax-loading {
       width: 100px;
-      height: 100px;
-      margin-left: 150px; } }
+      height: 100px; } }
 
 .articleLink {
   text-decoration: none;
@@ -334,11 +348,6 @@ main section {
 
 @media (min-width: 1023px) {
   /* The header */
-  .logo {
-    width: 29%;
-    height: 14rem;
-    margin-left: 0px;
-    margin-right: -50px; }
   .textAtTop {
     color: white; }
   .headerDiv {
