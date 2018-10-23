@@ -3,7 +3,8 @@ $('select').on('change', function(){
     url += '?' + $.param({
         'api-key': "82f12f3e4189492f86578cb2d4e6add0"
        });
-    
+       $('header').toggleClass("shrink");
+       $('body').toggleClass("body-move");
     //Make the request
     //For a single article console log the data
     //Put the data on the page
@@ -23,12 +24,12 @@ $('select').on('change', function(){
         var $url = data.results[i].url;
         var $description = data.results[i].abstract;
         console.log(data);
-        $('.oneArticle').append('<section><a href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a></section>')
+        $('.oneArticle').append('<section><a target="_blank" href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a></section>')
         }
         
        }).fail(function(err) {
         throw err;
-       });      
+       });   
 })
 
 //Move the logo

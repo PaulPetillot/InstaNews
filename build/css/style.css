@@ -89,10 +89,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 15.5rem;
+  height: 14rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px; }
+  margin-top: 0px; }
   @media (min-width: 600px) {
     .logo {
       width: 34%;
@@ -121,6 +121,94 @@ body {
 
 header {
   margin-bottom: 2rem; }
+
+.shrink {
+  -webkit-animation: logo 1.5s both;
+          animation: logo 1.5s both; }
+  @media (min-width: 600px) {
+    .shrink {
+      -webkit-animation: logo 1.5s both;
+              animation: logo 1.5s both; } }
+  @media (min-width: 1023px) {
+    .shrink {
+      -webkit-animation: logo-desktop 1.5s both;
+              animation: logo-desktop 1.5s both; } }
+
+.body-move {
+  -webkit-animation: body-move-mobile 1.5s both;
+          animation: body-move-mobile 1.5s both; }
+  @media (min-width: 600px) {
+    .body-move {
+      -webkit-animation: body-move-mobile 1.5s both;
+              animation: body-move-mobile 1.5s both; } }
+  @media (min-width: 1023px) {
+    .body-move {
+      -webkit-animation: body-move 1.5s both;
+              animation: body-move 1.5s both; } }
+
+@-webkit-keyframes logo-desktop {
+  0% {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1); }
+  100% {
+    -webkit-transform: translate(-360px, 90px) scale(0.5);
+            transform: translate(-360px, 90px) scale(0.5); } }
+
+@keyframes logo-desktop {
+  0% {
+    -webkit-transform: translate(0px, 0px) scale(1);
+            transform: translate(0px, 0px) scale(1); }
+  100% {
+    -webkit-transform: translate(-360px, 90px) scale(0.5);
+            transform: translate(-360px, 90px) scale(0.5); } }
+
+@-webkit-keyframes body-move {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px); } }
+
+@keyframes body-move {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
+    -webkit-transform: translateY(-280px);
+            transform: translateY(-280px); } }
+
+@-webkit-keyframes body-move-mobile {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px); } }
+
+@keyframes body-move-mobile {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px); } }
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: translate(0px) scale(1);
+            transform: translate(0px) scale(1); }
+  100% {
+    -webkit-transform: translateY(120px) scale(0.3);
+            transform: translateY(120px) scale(0.3); } }
+
+@keyframes logo {
+  0% {
+    -webkit-transform: translate(0px) scale(1);
+            transform: translate(0px) scale(1); }
+  100% {
+    -webkit-transform: translateY(120px) scale(0.3);
+            transform: translateY(120px) scale(0.3); } }
 
 /*The List of different sections */
 form {
@@ -155,21 +243,24 @@ main section {
       height: 200px; } }
 
 .articleImage {
-  width: 100%; }
+  width: 100%;
+  size: cover; }
 
 .articleDescription {
   width: 100%;
   position: absolute;
-  bottom: -100px;
-  font-size: 15px;
-  opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-  background: rgba(0, 0, 0, 0.6); }
-
-section:hover .articleDescription {
-  opacity: 1;
-  bottom: 0; }
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0px;
+  padding: 5px; }
+  @media (min-width: 1023px) {
+    .articleDescription {
+      width: 100%;
+      position: absolute;
+      bottom: -100px;
+      opacity: 0;
+      -webkit-transition: 1s;
+      transition: 1s; } }
 
 .articleLink {
   text-decoration: none;
@@ -226,4 +317,7 @@ section:hover .articleDescription {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 0;
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  section:hover .articleDescription {
+    opacity: 1;
+    bottom: 0; } }
