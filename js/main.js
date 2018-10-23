@@ -1,3 +1,4 @@
+
 $('select').on('change', function(){
     var url = "https://api.nytimes.com/svc/topstories/v2/"+$('select').val()+".json";
     url += '?' + $.param({
@@ -5,6 +6,8 @@ $('select').on('change', function(){
        });
        $('header').toggleClass("shrink");
        $('body').toggleClass("body-move");
+       $('#ajax-loading').show();
+       
     //Make the request
     //For a single article console log the data
     //Put the data on the page
@@ -26,7 +29,7 @@ $('select').on('change', function(){
         console.log(data);
         $('.oneArticle').append('<section><a target="_blank" href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a></section>')
         }
-        
+        $('#ajax-loading').hide();
        }).fail(function(err) {
         throw err;
        });   

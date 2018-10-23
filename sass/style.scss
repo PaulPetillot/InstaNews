@@ -25,13 +25,13 @@ body{
         height: 11.5rem;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 51px;
     }
     @include desktop{
         width: 29%;
         height: 14rem;
         margin-left: 0px;
         margin-right: -50px;
+        margin-top: 51px;
     }
 }
 /* Text Choose a Section */
@@ -63,8 +63,7 @@ header {
 @keyframes logo-desktop{
     0%{transform: translate(0px, 0px) scale(1);}
     100%{
-        transform: translate(-360px, 90px) scale(0.5);
-    }
+        transform: translate(-360px, 90px) scale(0.5);}
 }
 @keyframes body-move{
     0%{transform: translate(0px, 0px);}
@@ -77,13 +76,12 @@ header {
 @keyframes logo{
     0%{transform: translate(0px) scale(1);}
     100%{
-        transform: translateY(120px) scale(0.3);
-    } 
+        transform: translateY(120px) scale(0.3);} 
 }
 @keyframes logo-tablet{
     0%{transform: translate(0px) scale(1);}
     100%{
-        transform: translateY(120px) scale(0.7);
+        transform: translateY(65px) scale(0.7);}
     }
 /*The List of different sections */
 
@@ -134,6 +132,21 @@ main section{
         transition: 1s;
     }
     
+}
+//Gif
+#ajax-loading{
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+    display: none;
+    @include tablet{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;}
+    @include desktop{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;}
 }
 // Links of the articles 
 .articleLink{
