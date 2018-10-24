@@ -1,12 +1,11 @@
-
 $('select').on('change', function(){
+    $('.loader').css('display', 'flex');
     var url = "https://api.nytimes.com/svc/topstories/v2/"+$('select').val()+".json";
     url += '?' + $.param({
         'api-key': "82f12f3e4189492f86578cb2d4e6add0"
        });
        $('header').toggleClass("shrink");
        $('body').toggleClass("body-move");
-       $('#ajax-loading').show();
        
     //Make the request
     //For a single article console log the data
@@ -27,9 +26,10 @@ $('select').on('change', function(){
         var $url = data.results[i].url;
         var $description = data.results[i].abstract;
         console.log(data);
-        $('.oneArticle').append('<section><a target="_blank" href="'+$url+'"class="articleLink"><img src="'+$img+'" class="articleImage"><h2 class="articleDescription">'+ $description+ '</h2></a></section>')
+        $('.oneArticle').append('<a target="_blank" href="'+$url+'"class="articleLink"><section class="articleSection"><h2 class="articleDescription">'+ $description+ '</h2></section></a>');
+        $('.articleSection').last().css("background-image", 'url("'+$img+'")');
         }
-        $('#ajax-loading').hide();
+        $('.loader').css('display', 'none');
        }).fail(function(err) {
         throw err;
        });   
