@@ -5,7 +5,7 @@ InstaNews is a responsive website that uses the New York Times's API to show the
 
 ## Built With
 
-This website is using HTML5, SASS(flex, media queries, variables and animations), JavaScript, JQuery, AJAX.
+This website is using HTML5, SASS(flex, media queries, variables and animations), JavaScript, JQuery, AJAX, and Gulp/Node JS.
 
 ## Author
 
