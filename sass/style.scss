@@ -10,6 +10,7 @@ html{
 body{
     background-color: $backgroundColor;
     @include font;
+    height: 100vh;
 }
 
 /* The logo */
@@ -166,6 +167,7 @@ main a{
     }
     @include desktop {
         justify-content: flex-start;
+        margin-top: 25px;
     }
 }
 @include tablet{

@@ -81,7 +81,8 @@ body {
   background-color: black;
   font-family: "Open Sans";
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  height: 100vh; }
 
 /* The logo */
 .logo {
@@ -340,7 +341,8 @@ main a {
     .credit {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start; } }
+              justify-content: flex-start;
+      margin-top: 25px; } }
 
 @media (min-width: 600px) {
   .headerDiv {
