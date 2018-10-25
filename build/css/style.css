@@ -342,7 +342,8 @@ main a {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      margin-top: 25px; } }
+      margin-top: 25px;
+      margin-top: 18rem; } }
 
 @media (min-width: 600px) {
   .headerDiv {
