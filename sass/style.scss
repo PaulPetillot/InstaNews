@@ -13,13 +13,18 @@ body{
     @include font;
     height: 86vh;
 }
-.headerDiv {
+
+/* The logo */
+.headerDiv{
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: center;
-    height: 80vh;
+    height: 80vw;
 }
-/* The logo */
+.headerDiv.shrink{
+    height: auto;
+}
 .logo{
     display: flex;
     width: 50%;
@@ -50,7 +55,11 @@ body{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-header {margin-bottom: 2rem;}
+header {
+    // margin-bottom: 2rem;
+    margin: 2em 0;
+    height: 70vw;
+}
 
 
 /*The List of different sections */

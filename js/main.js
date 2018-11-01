@@ -4,7 +4,8 @@ $('select').on('change', function(){
     url += '?' + $.param({
         'api-key': "82f12f3e4189492f86578cb2d4e6add0"
        });
-       $('header').toggleClass("shrink");
+    //    $('header').toggleClass("shrink");
+       $('.headerDiv').toggleClass("shrink");
        $('body').toggleClass("body-move");
        
     //Make the request
