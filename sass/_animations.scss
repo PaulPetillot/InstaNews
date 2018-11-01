@@ -1,0 +1,29 @@
+.body-move{
+    animation: body-move-mobile 1.5s both;
+    @include tablet {animation: body-move-tablet 1.5s both;}
+    @include desktop {animation: body-move 1.5s both;}
+}
+@keyframes logo-desktop{
+    0%{transform: translate(0px, 0px) scale(1);}
+    100%{transform: translate(-360px, 90px) scale(0.5);}
+}
+@keyframes body-move{
+    0%{transform: translate(0px, 0px);}
+    100%{transform: translateY(-280px);}
+}
+@keyframes body-move-mobile{
+    0%{transform: translate(0px, 0px);}
+    100%{transform: translateY(-180px);}
+}
+@keyframes body-move-tablet{
+    0%{transform: translate(0px, 0px);}
+    100%{transform: translateY(-100px);}
+}
+@keyframes logo{
+    0%{transform: translate(0px) scale(1);}
+    100%{transform: translateY(120px) scale(0.4);} 
+}
+@keyframes logo-tablet{
+    0%{transform: translate(0px) scale(1);}
+    100%{transform: translateY(65px) scale(0.6);}
+    }
