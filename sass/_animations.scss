@@ -27,3 +27,11 @@
     0%{transform: translate(0px) scale(1);}
     100%{transform: translateY(65px) scale(0.6);}
     }
+
+.shrink{
+    animation: logo 1.5s both;
+    @include tablet{
+    animation: logo-tablet 1.5s both;}
+    @include desktop{
+    animation: logo-desktop 1.5s both;}
+}
