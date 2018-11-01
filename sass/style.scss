@@ -15,16 +15,7 @@ body{
 }
 
 /* The logo */
-.headerDiv{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    height: 80vw;
-}
-.headerDiv.shrink{
-    height: auto;
-}
+
 .logo{
     display: flex;
     width: 50%;
@@ -58,7 +49,7 @@ body{
 header {
     // margin-bottom: 2rem;
     margin: 2em 0;
-    height: 70vw;
+    // height: 80vw;
 }
 
 
@@ -70,6 +61,15 @@ form {
 }
 
 /* The article design */
+main.articleBlock {
+    margin-top: 30%;
+    @include tablet{
+        margin-top: 8%;
+    }
+    @include desktop{
+        margin-top: 0%;
+    }
+}
 
 .oneArticle{
     display: flex;
@@ -148,8 +148,10 @@ main a{
     }
     @include desktop {
         justify-content: flex-start;
-        margin-top: 25px;
-        margin-top: 18rem;
+        // margin-top: 25px;
+        // margin-top: 18rem;
+        margin-left: 3em;
+        margin-bottom: 3em;
     }
 }
 @include tablet{
@@ -172,8 +174,10 @@ main a{
     .headerDiv{
         display: flex;
         align-items: center;
-        margin-left: 0;
-        margin-top: 100px;
+        // margin-left: 0;
+        // margin-top: 100px;
+        margin-top: 7em;
+        margin-bottom: 2.5em;
     }
     section:hover .articleDescription{
         opacity: 1;
