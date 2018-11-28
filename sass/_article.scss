@@ -1,0 +1,57 @@
+/* The article design */
+@import 'mixin';
+@import 'variables';
+.all-article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.articleSection {
+    width: 100%;
+    height: 100%;
+}
+// Links of the articles 
+.articleLink {
+    text-decoration: none;
+    color: $font-color-base;
+    background-size: cover;
+}
+main a {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+
+    @include tablet {
+        width: 33%;
+        height: 330px;
+    }
+
+    @include desktop {
+        width: 25%;
+        height: 350px;
+    }
+}
+
+.articleDescription {
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    background: rgba($color: #000000, $alpha: 0.6);
+    bottom: 0px;
+    padding: 10px 10px;
+    line-height: 2;
+    box-sizing: border-box;
+
+    @include tablet {}
+
+    @include desktop {
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+        opacity: 0;
+        transition: 1s;
+
+    }
+}

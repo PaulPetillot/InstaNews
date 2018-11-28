@@ -2,142 +2,26 @@
 @import 'fonts';
 @import 'mixin';
 @import 'variables';
-
+@import 'header';
+@import 'article';
+@import 'animations';
+@import 'footer';
 /* Mobile version */
-html{
+html {
     font-size: 16px;
 }
-body{
+
+body {
     background-color: $backgroundColor;
     @include font;
     height: 86vh;
 }
 
-/* The logo */
-.logo{
-    display: flex;
-    width: 50%;
-    height: 14rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    @include tablet {
-        width: 34%;
-        height: 11.5rem;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    @include desktop{
-        width: 29%;
-        height: 14rem;
-        margin-left: 0px;
-        margin-right: -50px;
-        margin-top: 51px;
-    }
-}
-/* Text Choose a Section */
-
-.textAtTop{
-    color: $font-color-base;
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-header {margin-bottom: 2rem;}
-.shrink{
-    animation: logo 1.5s both;
-    @include tablet{
-    animation: logo-tablet 1.5s both;}
-    @include desktop{
-    animation: logo-desktop 1.5s both;}
-}
-.body-move{
-    animation: body-move-mobile 1.5s both;
-    @include tablet {animation: body-move-tablet 1.5s both;}
-    @include desktop {animation: body-move 1.5s both;}
-}
-@keyframes logo-desktop{
-    0%{transform: translate(0px, 0px) scale(1);}
-    100%{transform: translate(-360px, 90px) scale(0.5);}
-}
-@keyframes body-move{
-    0%{transform: translate(0px, 0px);}
-    100%{transform: translateY(-280px);}
-}
-@keyframes body-move-mobile{
-    0%{transform: translate(0px, 0px);}
-    100%{transform: translateY(-180px);}
-}
-@keyframes body-move-tablet{
-    0%{transform: translate(0px, 0px);}
-    100%{transform: translateY(-100px);}
-}
-@keyframes logo{
-    0%{transform: translate(0px) scale(1);}
-    100%{transform: translateY(120px) scale(0.4);} 
-}
-@keyframes logo-tablet{
-    0%{transform: translate(0px) scale(1);}
-    100%{transform: translateY(65px) scale(0.6);}
-    }
-/*The List of different sections */
-
-form {
-    display: flex;
-    justify-content: center;
-}
-
-/* The article design */
-
-.oneArticle{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.articleSection{width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-main a{
-    position: relative;
-    height: 250px;
-    width: 100%;
-    overflow: hidden;
-    @include tablet{
-        width : 33%;
-        height: 330px;
-    }
-    @include desktop{
-        width: 25%;
-        height: 350px;
-    }
-}
-
-.articleDescription{
-    width: 100%;
-    position: absolute;
-    font-size: 15px;
-    background: rgba($color: #000000, $alpha: 0.6);
-    bottom: 0px;
-    padding: 10px 10px;
-    line-height: 2;
-    box-sizing: border-box;
-    @include tablet{
-    }
-    @include desktop{width: 100%;
-        position: absolute;
-        bottom: -100px;
-        opacity: 0;
-        transition: 1s;
-        
-    }  
-}
 //Gif
 
-.loader{
+.loader {
     position: absolute;
-    top : 0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -145,58 +29,12 @@ main a{
     justify-content: center;
     align-items: center;
     display: none;
-    img{
+
+    img {
         display: inline-block;
         width: 70px;
         height: 70px;
     }
 }
-// Links of the articles 
-.articleLink{
-    text-decoration: none;
-    color : $font-color-base;
-}
-/* The footer */
-.credit {
-    color: $footer-color;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    @include tablet {
-        margin-top: 100px;
-    }
-    @include desktop {
-        justify-content: flex-start;
-        margin-top: 25px;
-        margin-top: 18rem;
-    }
-}
-@include tablet{
-    .headerDiv{
-        display: flex;
-        align-items: center;
-        margin-left: 150px;
-    }
-    /* Text Choose a Section */
-    .logo, .textAtTop {
-        display: flex;
-    }
-}
-@include desktop{
-      /* The header */
-    
-    .textAtTop{
-        color: $font-color-base;
-    }
-    .headerDiv{
-        display: flex;
-        align-items: center;
-        margin-left: 0;
-        margin-top: 100px;
-    }
-    section:hover .articleDescription{
-        opacity: 1;
-        bottom: 0;
-        
-    }
-}
+
+

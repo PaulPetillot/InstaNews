@@ -21,6 +21,8 @@
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-terser": "^1.1.5",
     "gulp-uglify": "^3.0.1"
   }
 }

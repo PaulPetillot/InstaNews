@@ -1,0 +1,81 @@
+@import 'mixin';
+@import 'variables';
+/* The logo */
+.logo {
+    display: flex;
+    width: 50%;
+    height: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    @include tablet {
+        width: 34%;
+        height: 11.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    @include desktop {
+        width: 29%;
+        height: 14rem;
+        margin-left: 0px;
+        margin-right: -50px;
+        margin-top: 51px;
+    }
+}
+
+@include tablet {
+    .headerDiv {
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+    }
+
+    /* Text Choose a Section */
+    .logo,
+    .textAtTop {
+        display: flex;
+    }
+}
+
+@include desktop {
+    /* The header */
+
+    .textAtTop {
+        color: $font-color-base;
+    }
+
+    .headerDiv {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    section:hover .articleDescription {
+        opacity: 1;
+        bottom: 0;
+
+    }
+}
+/* Text Choose a Section */
+
+.textAtTop {
+    color: $font-color-base;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+/*The List of different sections */
+
+form {
+    display: flex;
+    justify-content: center;
+}
