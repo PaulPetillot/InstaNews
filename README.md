@@ -39,7 +39,7 @@ HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) | JQuery | AJAX | API's | CSS ani
 ----
 ## Device Screenshots
 
-**Mobile Device**
+**Desktop Device**
 ----
 <img src="assets/images/instanews-desktop.png"  />
 <img src="assets/images/instanews-desktop-loaded.png"  />
@@ -50,7 +50,7 @@ HTML5 | CSS3 | Gulp | Sass (CSS Preprocessors) | JQuery | AJAX | API's | CSS ani
 <img src="assets/images/instanews-tablet-loaded.png"  />
 
 
-**Desktop Device**
+**Mobile Device**
 ----
 <img src="assets/images/instanews-mobile.png"  />
 <img src="assets/images/instanews-mobile-loaded.png"  />
