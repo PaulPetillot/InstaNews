@@ -384,6 +384,11 @@ main a {
             transform: translateY(65px) scale(0.5); } }
 
 /* The footer */
+@media (min-width: 1023px) {
+  footer {
+    position: absolute;
+    bottom: 10px; } }
+
 .credit {
   color: #c2c2c2;
   margin-top: 50px;
@@ -395,15 +400,13 @@ main a {
           justify-content: center; }
   @media (min-width: 600px) {
     .credit {
-      margin-top: 100px; } }
+      margin-top: 50px; } }
   @media (min-width: 1023px) {
     .credit {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: flex-start;
-      margin-top: 20px; } }
+              justify-content: flex-start; } }
 
-/* Mobile version */
 html {
   font-size: 16px; }
 

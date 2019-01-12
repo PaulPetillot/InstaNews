@@ -1,6 +1,12 @@
 @import 'mixin';
 @import 'variables';
 /* The footer */
+footer{
+    @include desktop{
+        position: absolute;
+        bottom : 10px;
+    }
+}
 .credit {
     color: $footer-color;
     margin-top: 50px;
@@ -8,11 +14,10 @@
     justify-content: center;
 
     @include tablet {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     @include desktop {
         justify-content: flex-start;
-        margin-top: 20px;
     }
 }
