@@ -7,7 +7,7 @@
   },
   "author": "Paul Petillot",
   "license": "ISC",
-  "description": "",
+  "description": "Instanews is a website which use the New York Time API to show you their last articles per category.",
   "dependencies": {
     "gulp-eslint": "^5.0.0",
     "jquery": "^3.3.1",

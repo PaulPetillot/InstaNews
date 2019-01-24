@@ -5,7 +5,7 @@ $(document).ready(function () {
         $('footer').css('top', '1360px');
         let url = 'https://api.nytimes.com/svc/topstories/v2/' + $('select').val() + '.json';
         url += '?' + $.param({
-            'api-key': '82f12f3e4189492f86578cb2d4e6add0'
+            'api-key': 'Z4Q0RWspjL4d7O2pBfSjdkmRjJZp7WNF'
         });
         $('.logo').addClass('shrink');
         $('#idListe').addClass('form-anim');
@@ -24,10 +24,10 @@ $(document).ready(function () {
                 if (data.results[i].multimedia.length) {
                     articleCounter += 1;
                     const $article = $('<a target="_blank" href="' +
-                    url + '"class="articleLink"><section class="articleSection"><h2 class="articleDescription">' +
-                    description + '</h2></section></a>');
+                        url + '"class="articleLink"><section class="articleSection"><h2 class="articleDescription">' +
+                        description + '</h2></section></a>');
                     $allArticle.append($article) +
-                    $article.css('background-image', 'url("' + img + '")');
+                        $article.css('background-image', 'url("' + img + '")');
                 }
                 $loader.css('display', 'none');
             }
